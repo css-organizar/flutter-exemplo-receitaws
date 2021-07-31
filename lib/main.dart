@@ -1,6 +1,6 @@
+import 'package:consumo_api_cnpj/applicatioon/app_widget.dart';
 import 'package:flutter/material.dart';
-import 'app/app_widget.dart';
 
-void main() => runApp(AppWidget());
-
-
+void main() {
+  return runApp(AppWidget());
+}

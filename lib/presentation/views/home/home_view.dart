@@ -1,27 +1,23 @@
-import 'dart:io';
-
-import 'package:consumo_api_cnpj/app/pages/homepage/widgets/form_widget.dart';
+import 'package:consumo_api_cnpj/presentation/views/home/home_controller.dart';
+import 'package:consumo_api_cnpj/presentation/views/home/widgets/form_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_masked_text/flutter_masked_text.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:mobx/mobx.dart';
 
-import '../../../shared/controllers/empresa_controller.dart';
-
-class HomePage extends StatefulWidget {
+class HomeView extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _HomeViewState createState() => _HomeViewState();
 }
 
-class _HomePageState extends State<HomePage> {
-
+class _HomeViewState extends State<HomeView> {
   String resultado;
   final _formKey = GlobalKey<FormState>();
   ReactionDisposer disposer;
   TextEditingController cnpjController = TextEditingController();
-  EmpresaController controller = EmpresaController();
+  HomeController controller = HomeController();
   MaskedTextController inputCnpjController = new MaskedTextController(
-    text: '', 
+    text: '',
     mask: '00.000.000/0000-00',
   );
 
@@ -43,11 +39,7 @@ class _HomePageState extends State<HomePage> {
             ),
             onPressed: () {
               controller.buscarEmpresaCnpj(
-                inputCnpjController.text
-                                          .replaceAll('.', '')
-                                          .replaceAll('/', '')
-                                          .replaceAll('-', '')
-              );
+                  inputCnpjController.text.replaceAll('.', '').replaceAll('/', '').replaceAll('-', ''));
             },
           )
         ],
@@ -62,29 +54,27 @@ class _HomePageState extends State<HomePage> {
                 padding: const EdgeInsets.all(15.0),
                 child: TextField(
                   controller: inputCnpjController,
-                  decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      labelText: "CNPJ",
-                      hintText: "Informe o CNPJ"),
+                  decoration:
+                      InputDecoration(border: OutlineInputBorder(), labelText: "CNPJ", hintText: "Informe o CNPJ"),
                 ),
               ),
             ),
             Observer(
-              builder: (BuildContext context){
-                if(controller.isLoading){
+              builder: (BuildContext context) {
+                if (controller.isLoading) {
                   return Center(
                     child: CircularProgressIndicator(),
                   );
                 } else {
                   return Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(15.0),
-                    child: FormWidget(
-                      controller: controller,
-                      formKey: _formKey,
+                    child: Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: FormWidget(
+                        controller: controller,
+                        formKey: _formKey,
+                      ),
                     ),
-                  ),
-                );
+                  );
                 }
               },
             )

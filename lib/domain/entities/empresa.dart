@@ -4,7 +4,6 @@ part 'empresa.g.dart';
 class Empresa = _EmpresaBase with _$Empresa;
 
 abstract class _EmpresaBase with Store {
-
   @observable
   String nome;
 
@@ -12,7 +11,7 @@ abstract class _EmpresaBase with Store {
   String situacao;
 
   @observable
-  String data_situacao;
+  String dataSituacao;
 
   @observable
   String email;
@@ -20,19 +19,18 @@ abstract class _EmpresaBase with Store {
   @observable
   String cnpj;
 
-  _EmpresaBase({Map empresa}){
-    if(empresa!=null){
+  _EmpresaBase({Map empresa}) {
+    if (empresa != null) {
       this.fromMap(empresa);
     }
   }
 
   @action
-  fromMap(Map value){
+  fromMap(Map value) {
     this.nome = value['nome'];
     this.situacao = value['situacao'];
-    this.data_situacao = value['data_situacao'];
+    this.dataSituacao = value['data_situacao'];
     this.email = value['email'];
     this.cnpj = value['cnpj'];
   }
-
 }

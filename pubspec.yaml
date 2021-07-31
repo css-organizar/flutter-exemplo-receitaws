@@ -17,11 +17,11 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
-  flutter_masked_text: ^0.8.0
-  flutter_mobx: ^0.3.6
-  mobx: ^0.4.0+1
-  dio: ^3.0.8
-  http: ^0.12.0+4
+  flutter_masked_text: 
+  flutter_mobx: 
+  mobx: 
+  dio: 
+  http: 
   flutter:
     sdk: flutter
 
@@ -30,8 +30,8 @@ dependencies:
   cupertino_icons: ^0.1.2
 
 dev_dependencies:
-  mobx_codegen: ^0.4.0+1
-  build_runner: ^1.7.2
+  mobx_codegen: 
+  build_runner: 
   flutter_test:
     sdk: flutter
 
