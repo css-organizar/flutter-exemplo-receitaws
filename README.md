@@ -8,6 +8,8 @@ Uma API simples para recuperação de informações de empresas através de seu 
 
 # API: Documentação
 
+[ReceiaWS - Documenttação](https://receitaws.com.br/api)
+
 O ReceitaWS provê uma API para recuperação de dados de empresas brasileiras através de seu CNPJ. Existem dois modos de utilização desta API:
 
 Modo Público
@@ -36,3 +38,7 @@ Exemplo de requisição
 ```
 $ curl -X GET https://www.receitaws.com.br/v1/cnpj/27865757000102
 ```
+Exemplo de Retorno da Requisiçãoo
+
+[ReceitaWS - Exemplo de Retorno da Requisiçãoo](https://www.receitaws.com.br/v1/cnpj/27865757000102)
+
