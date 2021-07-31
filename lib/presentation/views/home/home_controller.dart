@@ -1,5 +1,5 @@
 import 'package:consumo_api_cnpj/domain/entities/empresa.dart';
-import 'package:consumo_api_cnpj/infrastrucure/repository/empresa_repository.dart';
+import 'package:consumo_api_cnpj/infrastrucure/repository/receita_ws_reposiory.dart';
 import 'package:mobx/mobx.dart';
 
 part 'home_controller.g.dart';
@@ -7,7 +7,7 @@ part 'home_controller.g.dart';
 class HomeController = _HomeControllerBase with _$HomeController;
 
 abstract class _HomeControllerBase with Store {
-  final EmpresaRepository repository = EmpresaRepository();
+  final ReceitaWsRepository repository = ReceitaWsRepository();
 
   @observable
   Empresa empresa = Empresa();
