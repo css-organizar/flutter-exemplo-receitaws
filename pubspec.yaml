@@ -29,9 +29,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
+
 dev_dependencies:
   mobx_codegen: 
   build_runner: 
+  flutter_native_splash: ^1.2.0
   flutter_test:
     sdk: flutter
 
@@ -77,3 +79,12 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+  #flutter pub run flutter_native_splash:create
+
+flutter_native_splash:
+  image: assets/logo.png
+  color: "ffffff"
+  fill: false
+  fullscreen: true
+  # android_disable_fullscreen: true
