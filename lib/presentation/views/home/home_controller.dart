@@ -1,5 +1,5 @@
-import 'package:consumo_api_cnpj/domain/entities/empresa.dart';
-import 'package:consumo_api_cnpj/infrastrucure/repository/receitaws_reposiory.dart';
+import 'package:ReceitaWS_Consulta_Cnpj/domain/entities/empresa.dart';
+import 'package:ReceitaWS_Consulta_Cnpj/infrastrucure/repository/receitaws_reposiory.dart';
 import 'package:mobx/mobx.dart';
 
 part 'home_controller.g.dart';

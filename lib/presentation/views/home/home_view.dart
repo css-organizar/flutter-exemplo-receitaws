@@ -1,5 +1,5 @@
-import 'package:consumo_api_cnpj/presentation/views/home/home_controller.dart';
-import 'package:consumo_api_cnpj/presentation/views/home/widgets/form_widget.dart';
+import 'package:ReceitaWS_Consulta_Cnpj/presentation/views/home/home_controller.dart';
+import 'package:ReceitaWS_Consulta_Cnpj/presentation/views/home/widgets/form_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_masked_text/flutter_masked_text.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';

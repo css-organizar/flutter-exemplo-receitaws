@@ -1,4 +1,4 @@
-import 'package:consumo_api_cnpj/presentation/views/home/home_controller.dart';
+import 'package:ReceitaWS_Consulta_Cnpj/presentation/views/home/home_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 

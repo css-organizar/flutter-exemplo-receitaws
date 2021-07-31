@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'package:consumo_api_cnpj/applicatioon/commons/constantes/receitaWs.dart';
-import 'package:consumo_api_cnpj/domain/entities/empresa.dart';
+import 'package:ReceitaWS_Consulta_Cnpj/applicatioon/commons/constantes/receitaWs.dart';
+import 'package:ReceitaWS_Consulta_Cnpj/domain/entities/empresa.dart';
 import 'package:http/http.dart' as http;
 
 class ReceitaWsRepository {

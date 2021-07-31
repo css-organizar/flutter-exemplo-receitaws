@@ -1,4 +1,4 @@
-import 'package:consumo_api_cnpj/applicatioon/app_widget.dart';
+import 'package:ReceitaWS_Consulta_Cnpj/applicatioon/app_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
