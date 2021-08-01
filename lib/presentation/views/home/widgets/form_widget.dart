@@ -1,11 +1,12 @@
-import 'package:ReceitaWS_Consulta_Cnpj/presentation/views/home/home_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+
+import '../home_controller.dart';
 
 class FormWidget extends StatefulWidget {
   final GlobalKey formKey;
   final HomeController controller;
-  const FormWidget({Key key, this.controller, this.formKey}) : super(key: key);
+  FormWidget({Key key, this.controller, this.formKey}) : super(key: key);
 
   @override
   _FormWidgetState createState() => _FormWidgetState();
@@ -24,8 +25,8 @@ class _FormWidgetState extends State<FormWidget> {
                 maxLines: 3,
                 controller: TextEditingController(text: widget.controller.empresa.nome),
                 readOnly: true,
-                decoration: const InputDecoration(
-                  icon: const Icon(Icons.person),
+                decoration: InputDecoration(
+                  icon: Icon(Icons.person),
                   hintText: '',
                   labelText: 'Razão Social',
                 ),
@@ -34,8 +35,8 @@ class _FormWidgetState extends State<FormWidget> {
               TextFormField(
                 controller: TextEditingController(text: widget.controller.empresa.situacao),
                 readOnly: true,
-                decoration: const InputDecoration(
-                  icon: const Icon(Icons.info),
+                decoration: InputDecoration(
+                  icon: Icon(Icons.info),
                   hintText: '',
                   labelText: 'Situação',
                 ),
@@ -44,8 +45,8 @@ class _FormWidgetState extends State<FormWidget> {
               TextFormField(
                 controller: TextEditingController(text: widget.controller.empresa.dataSituacao),
                 readOnly: true,
-                decoration: const InputDecoration(
-                  icon: const Icon(Icons.calendar_today),
+                decoration: InputDecoration(
+                  icon: Icon(Icons.calendar_today),
                   hintText: '',
                   labelText: 'Data da Situação',
                 ),
@@ -54,8 +55,8 @@ class _FormWidgetState extends State<FormWidget> {
               TextFormField(
                 controller: TextEditingController(text: widget.controller.empresa.email),
                 readOnly: true,
-                decoration: const InputDecoration(
-                  icon: const Icon(Icons.email),
+                decoration: InputDecoration(
+                  icon: Icon(Icons.email),
                   hintText: '',
                   labelText: 'E-mail',
                 ),
@@ -64,8 +65,8 @@ class _FormWidgetState extends State<FormWidget> {
               TextFormField(
                 controller: TextEditingController(text: widget.controller.empresa.cnpj),
                 readOnly: true,
-                decoration: const InputDecoration(
-                  icon: const Icon(Icons.assignment_ind),
+                decoration: InputDecoration(
+                  icon: Icon(Icons.assignment_ind),
                   hintText: '',
                   labelText: 'CNPJ',
                 ),

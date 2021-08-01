@@ -1,6 +1,7 @@
-import 'package:ReceitaWS_Consulta_Cnpj/applicatioon/app_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'applicatioon/application_widget.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -8,5 +9,5 @@ void main() async {
     SystemUiOverlay.bottom,
     SystemUiOverlay.top,
   ]);
-  return runApp(AppWidget());
+  return runApp(ApplicationWidget());
 }

@@ -1,9 +1,10 @@
-import 'package:ReceitaWS_Consulta_Cnpj/presentation/views/home/home_controller.dart';
-import 'package:ReceitaWS_Consulta_Cnpj/presentation/views/home/widgets/form_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_masked_text/flutter_masked_text.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:mobx/mobx.dart';
+
+import '../../../presentation/views/home/home_controller.dart';
+import '../../../presentation/views/home/widgets/form_widget.dart';
 
 class HomeView extends StatefulWidget {
   @override
@@ -16,7 +17,7 @@ class _HomeViewState extends State<HomeView> {
   ReactionDisposer disposer;
   TextEditingController cnpjController = TextEditingController();
   HomeController controller = HomeController();
-  MaskedTextController inputCnpjController = new MaskedTextController(
+  MaskedTextController inputCnpjController = MaskedTextController(
     text: '',
     mask: '00.000.000/0000-00',
   );

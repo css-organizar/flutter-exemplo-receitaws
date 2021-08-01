@@ -21,16 +21,16 @@ abstract class _EmpresaBase with Store {
 
   _EmpresaBase({Map empresa}) {
     if (empresa != null) {
-      this.fromMap(empresa);
+      fromMap(empresa);
     }
   }
 
   @action
-  fromMap(Map value) {
-    this.nome = value['nome'];
-    this.situacao = value['situacao'];
-    this.dataSituacao = value['data_situacao'];
-    this.email = value['email'];
-    this.cnpj = value['cnpj'];
+  void fromMap(Map value) {
+    nome = value['nome'];
+    situacao = value['situacao'];
+    dataSituacao = value['data_situacao'];
+    email = value['email'];
+    cnpj = value['cnpj'];
   }
 }

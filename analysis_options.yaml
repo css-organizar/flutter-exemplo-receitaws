@@ -1,0 +1,13 @@
+include: package:lints/recommended.yaml
+
+linter:
+  rules:
+    - prefer_relative_imports
+    - avoid_relative_lib_imports
+    - camel_case_types
+    - camel_case_extensions
+    - always_declare_return_types
+
+analyzer:
+  exclude:
+#     - path/to/excluded/files/**

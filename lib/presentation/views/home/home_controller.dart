@@ -1,6 +1,7 @@
-import 'package:ReceitaWS_Consulta_Cnpj/domain/entities/empresa.dart';
-import 'package:ReceitaWS_Consulta_Cnpj/infrastrucure/repository/receitaws_reposiory.dart';
 import 'package:mobx/mobx.dart';
+
+import '../../../domain/entities/empresa.dart';
+import '../../../infrastrucure/repository/receitaws_reposiory.dart';
 
 part 'home_controller.g.dart';
 
@@ -16,15 +17,15 @@ abstract class _HomeControllerBase with Store {
   bool isLoading = false;
 
   @action
-  buscarEmpresaCnpj(String buscaCnpj) {
-    this.isLoading = true;
+  void buscarEmpresaCnpj(String buscaCnpj) {
+    isLoading = true;
 
     try {
       repository.getCnpjData(buscaCnpj).then((value) {
-        this.empresa = value;
+        empresa = value;
       });
-    } catch (e) {} finally {
-      this.isLoading = false;
+    } finally {
+      isLoading = false;
     }
   }
 }

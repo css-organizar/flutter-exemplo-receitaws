@@ -1,4 +1,4 @@
-name: ReceitaWS_Consulta_Cnpj
+name: receitaws_consulta_cnpj
 description: &#x27;A new Flutter project. Created by Slidy&#x27;
 
 # The following defines the version and build number for your application.
@@ -31,6 +31,7 @@ dependencies:
 
 
 dev_dependencies:
+  lints: ^1.0.1
   mobx_codegen: 
   build_runner: 
   flutter_native_splash: ^1.2.0
