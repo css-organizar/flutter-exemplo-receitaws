@@ -8,7 +8,7 @@ Uma API simples para recuperação de informações de empresas através de seu 
 
 ## API: Documentação
 
-Link Oficial - [ReceiaWS - Documenttação](https://receitaws.com.br/api)
+Link Oficial - [ReceiaWS - Documentação](https://receitaws.com.br/api)
 
 O ReceitaWS provê uma API para recuperação de dados de empresas brasileiras através de seu CNPJ. Existem dois modos de utilização desta API:
 
